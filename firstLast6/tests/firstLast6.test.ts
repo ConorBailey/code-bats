@@ -6,7 +6,7 @@
  */
 
 import {describe, expect, it } from "vitest";
-import { firstLast6 } from "../src/firstLast6";
+import { firstLast6 } from "../src/firstLast6.js";
 
 describe("firstLast6", ()=> {
     it("should return true if the first or last number in the array is a 6", ()=> {
@@ -19,5 +19,9 @@ describe("firstLast6", ()=> {
 
     it("should return true if the first or last number in the array is a 6", ()=> {
         expect(firstLast6([13, 6, 1, 2, 3])).toBe(false);
+    })
+
+    it("should throw an error as the array is empty", ()=> {
+        expect(()=> firstLast6([])).toThrow();
     })
 })
