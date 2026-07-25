@@ -1,14 +1,5 @@
 export function maxEnd3(nums: number[]): number[] {
-    const newArray: number[] = [];
+  const maxValue = nums[0]! > nums[2]! ? nums[0]! : nums[2]!;
 
-    if (nums[0]! > nums[2]! ) {
-        for(let i = 0; i < nums.length; i++) {
-            newArray.push(nums[0]!)
-        }
-        return newArray
-    }
-    for(let i = 0; i < nums.length; i++) {
-            newArray.push(nums[2]!)
-        }
-        return newArray
+  return Array(3).fill(maxValue);
 }
