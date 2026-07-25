@@ -7,9 +7,11 @@ reverse3([5, 11, 9]) → [9, 11, 5]
 reverse3([7, 0, 0]) → [0, 0, 7]
  */
 
-export function reverse3(nums: [number, number, number]): [number, number, number] {
-    if ( nums.length !== 3 ) {
-        throw new Error("Array needs to be length")
-    }
-    return[nums[2], nums[1], nums[0]];
+export function reverse3(
+  nums: number[],
+): number[] {
+  if (nums.length !== 3) {
+    throw new Error("Array needs to be length");
+  }
+  return [nums[2]!, nums[1]!, nums[0]!];
 }
