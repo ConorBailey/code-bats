@@ -1,0 +1,20 @@
+{
+  "name": "reverse3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
